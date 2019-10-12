@@ -1,7 +1,8 @@
 cd /opt
-echo ‘Jenkins Installation started.’
+yum install java-1.8.0-openjdk-devel -y
+yum install java-echo ‘Jenkins Installation started.’
 echo ‘-----------------------------’
 yum -y install wget
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-yum install jenkins -y
+yum install -y jenkins
